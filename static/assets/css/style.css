@@ -75,6 +75,7 @@ h6 {
   transition: all 0.5s;
   padding: 22px 0;
   background: #fff;
+  border-bottom: 2px solid #133155;
 }
 
 #header.header-scrolled {
