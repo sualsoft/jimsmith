@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<!-- ======= About Us Section ======= -->
+<section id="hero2" class="about">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>{{.Title}} </h2>
+    </div>
+
+    <div class="row content">
+      <div class="col-lg-7 single-content" data-aos="fade-up" data-aos-delay="150">
+        {{.Content}}
+      </div>
+      <div
+        class="col-lg-5 pt-4 pt-lg-0"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <img src="/assets/img/about.jpg" alt="" class="img-fluid mb-3" />
+        {{ with .Params.button}}
+        <a href="{{ .link }}" class="btn-learn-more">{{ .label }}</a>
+        {{end}}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End About Us Section -->
+{{end}}
